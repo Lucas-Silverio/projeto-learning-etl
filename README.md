@@ -1,6 +1,6 @@
-##Projeto de Engenharia de Dados — API Financeira + PostgreSQL
+Projeto de Engenharia de Dados — API Financeira + PostgreSQL
 
-#Descrição:
+Descrição:
 Projeto para aprendizado em Engenharia de Dados. Coleta dados financeiros via API, armazena em banco PostgreSQL e gera gráficos para análise.
 Tecnologias usadas
 
@@ -16,7 +16,7 @@ Tecnologias usadas
 
     python-dotenv (para variáveis de ambiente)
 
-#Como usar
+Como usar
 
     Crie um ambiente virtual e ative-o:
 
@@ -39,7 +39,7 @@ Execute o script principal:
 
     python main.py
 
-#Objetivo
+Objetivo
 
     Praticar coleta e armazenamento de dados financeiros
 
