@@ -1,50 +1,70 @@
-Projeto de Engenharia de Dados — API Financeira + PostgreSQL
+# 📊 Projeto de Engenharia de Dados — API Financeira + PostgreSQL
 
-Descrição:
-Projeto para aprendizado em Engenharia de Dados. Coleta dados financeiros via API, armazena em banco PostgreSQL e gera gráficos para análise.
-Tecnologias usadas
+## 🧾 Descrição
 
-    Python
+Projeto de aprendizado em Engenharia de Dados que realiza:
 
-    PostgreSQL
+- Coleta de dados financeiros via API
+- Armazenamento dos dados em um banco de dados PostgreSQL
+- Análise e visualização dos dados por meio de gráficos
 
-    psycopg2
+## 🛠️ Tecnologias Utilizadas
 
-    requests (para API financeira)
+- **Python**
+- **PostgreSQL**
+- **psycopg2** — conexão com o banco
+- **requests** — consumo da API financeira
+- **pandas**, **matplotlib** — manipulação e visualização dos dados
+- **python-dotenv** — gerenciamento de variáveis de ambiente
 
-    pandas, matplotlib (manipulação e visualização de dados)
+## 🚀 Como Executar
 
-    python-dotenv (para variáveis de ambiente)
+### 1. Clone o repositório
 
-Como usar
-
-    Crie um ambiente virtual e ative-o:
-
+``` 
+git clone https://github.com/Lucas-Silverio/projeto-learning-etl.git
+cd projeto-learning-etl
+```
+### 2. Crie e ative o ambiente virtual
+```
 python -m venv venv
-venv\Scripts\activate   # no Windows CMD
+```
+**Ative o ambiente:**
 
-Instale as dependências:
+Windows (Powershell): .\venv\Scripts\Activate.ps1
+<br><br>
+Linux: source /venv/bin/activate
 
+### 3. Instale as dependências
+```
 pip install -r requirements.txt
+```
 
-Configure o arquivo .env com suas variáveis:
+### 4. Configure o arquivo `.env`
 
-DB_HOST=...
-DB_NAME=...
-DB_USER=...
-DB_PASS=...
-API_KEY=...
+Crie um arquivo `.env` na raiz do projeto com o seguinte conteúdo:
+```
 
-Execute o script principal:
+DB_HOST=seu_host
+DB_NAME=seu_banco
+DB_USER=seu_usuario
+DB_PASS=sua_senha
+API_KEY=sua_chave_api
+```
+### 5. Execute o pipeline
+```
+python main.py
+```
 
-    python main.py
+## 🎯 Objetivos do Projeto
 
-Objetivo
+- Praticar a extração de dados a partir de APIs públicas
+- Armazenar e organizar dados em um banco relacional
+- Realizar transformações e análises com pandas
+- Gerar visualizações simples para extração de insights
 
-    Praticar coleta e armazenamento de dados financeiros
+## 📎 Fonte de Dados
 
-    Manipulação e análise de dados em Python
+Os dados utilizados neste projeto são obtidos por meio da **[Alpha Vantage API](https://www.alphavantage.co/)** — uma API pública para dados financeiros em tempo real e históricos.
 
-    Uso de banco relacional para engenharia de dados
-
-    Visualização gráfica simples para insights
+> É necessário gerar uma chave gratuita no site da Alpha Vantage para acessar os endpoints.
